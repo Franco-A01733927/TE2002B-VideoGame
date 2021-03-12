@@ -13,6 +13,7 @@ Ninja dash es una propuesta de solucion creada por alumnos del Tecnologico de Mo
 
 ### Herramientas
 - **Processing** *(Desarrollo del videojuego)*
+- **Arduino-Processing** *(Tratamiento de los datos recibidos mediante la comucion serial antes de ser enviados a Proccesing)*
 - **VHDL** *(Desarrolo de los perifericos de entrada y salida)*
 - **Assambler** (GSM) *(Desarrollo de la comunicacion enter los perifericos y el GUMNUT)*
 
@@ -24,6 +25,7 @@ El repositorio cuenta con 3 carpetas
 - **VHDL**
 - **Processing**
 - **Assambler**
+- **Arduino-Processing**
 
 Cada carperta Incluye los codigos necesarios para la creacion de los diferentes elementos que conforman a  Ninja Dash
 
