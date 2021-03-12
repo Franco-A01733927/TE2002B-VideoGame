@@ -20,7 +20,7 @@ Ninja dash es una propuesta de solucion creada por alumnos del Tecnologico de Mo
 ------------
 
 ### Contenido
-El repositorio cuenta con 3 carpetas 
+El repositorio cuenta con 4 carpetas 
 
 - **VHDL**
 - **Processing**
