@@ -29,11 +29,6 @@ El repositorio cuenta con 3 carpetas
 
 Cada carperta Incluye los codigos necesarios para la creacion de los diferentes elementos que conforman a  Ninja Dash
 
-------------
-
-> Nota: La carperta de VHDL cuenta con varias carpetas las cuales indican el contenido lo que se diseña con cada set de archivos
-
-------------
 ### Instrucciones
 
 ###### ****Si no cuntas con conocimiento previo en este tipo de proyectos favor de hacerle caso a las siguientes instruciones para poder ejecutar el programa de forma correcta****
