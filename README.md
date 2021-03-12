@@ -1,4 +1,3 @@
-# TE2002B-VideoGame
 #  Ninja Dash
 
 ------------
