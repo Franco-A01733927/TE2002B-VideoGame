@@ -70,5 +70,5 @@ Debes de tener en cuenta que la placa de desarrollo es nuestro control por lo qu
 - Atacar: *mover placa sobre el eje y*
 
 <p align="center">
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Frotate_2313685&psig=AOvVaw1xpz5qfOfq67h_1GPp3nd6&ust=1615611158233000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNiWiN36qe8CFQAAAAAdAAAAABAD" width="600">
+<img src="https://user-images.githubusercontent.com/70683976/110894391-6df2f180-82bd-11eb-946a-28e8dad197e7.jpg" width="300">
 </p>
