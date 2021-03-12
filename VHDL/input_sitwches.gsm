@@ -1,0 +1,104 @@
+; Ports  Decalration
+
+TX_busy				: equ 0x11
+data_Transimited	: equ 0x10
+TX_habilitated		: equ 0x12
+
+in_port_x1	:	equ 0
+in_port_x2	:	equ 1
+
+in_port_y1	:	equ 2
+in_port_y2	:	equ 3
+
+in_port_z1	:	equ 4
+in_port_z2	:	equ 5
+
+	text
+	org 0x000 	; start here on reset
+	jmp main
+			
+;	ISR
+
+	text
+	org 0x001
+
+; Eje x_1
+	espera_tx1:	inp		r1, TX_busy
+				sub		r0, r1, 0x01
+				bz		espera_tx1
+
+				inp r2, in_port_x1	
+				out	r2, data_Transimited
+				
+				;add		r4, r3, 0x00
+				out		r4, TX_habilitated
+
+; Eje x_2
+	espera_tx2:	inp		r1, TX_busy
+				sub		r0, r1, 0x01
+				bz		+1
+				jmp 	espera_tx2
+
+				inp r2, in_port_x2	
+				out	r2, data_Transimited
+				
+				;add		r4, r3, 0x00
+				out		r4, TX_habilitated				
+
+; Eje y_1
+	espera_tx3:	inp		r1, TX_busy
+				sub		r0, r1, 0x01
+				bz		+1
+				jmp     espera_tx3
+
+				inp r2, in_port_y1	
+				out	r2, data_Transimited
+
+				;add		r4, r3, 0x00
+				out		r4, TX_habilitated				
+
+; Eje y_2
+	espera_tx4:	inp		r1, TX_busy
+				sub		r0, r1, 0x01
+				bz		+1
+				jmp     espera_tx4
+
+				inp r2, in_port_y2	
+				out	r2, data_Transimited
+
+				;add		r4, r3, 0x00
+				out		r4, TX_habilitated				
+
+; Eje z_1
+	espera_tx5:	inp		r1, TX_busy
+				sub		r0, r1, 0x01
+				bz		+1
+				jmp     espera_tx5
+
+				inp r2, in_port_z1	
+				out	r2, data_Transimited
+				
+				;add		r4, r3, 0x00
+				out		r4, TX_habilitated				
+
+; Eje z_2
+	espera_tx6:	inp		r1, TX_busy
+				sub		r0, r1, 0x01
+				bz		+1
+				jmp     espera_tx6
+
+				inp r2, in_port_z2	
+				out	r2, data_Transimited
+				
+				;add		r4, r3, 0x00
+				out		r4, TX_habilitated
+
+; 	return to interruption 
+	reti
+	
+; Main program
+            text
+            org 0x050
+            
+main:         enai                ;enable interrupts
+			  stby                ;low-power mode
